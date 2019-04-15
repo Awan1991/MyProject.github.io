@@ -1,0 +1,129 @@
+
+main{
+  font-family: Arial, Helvetica, sans-serif;
+  background:url(image/cs.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+
+img{
+  width:100%;
+  /*height:300px;*/
+  background-image: cover;
+
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height:700px;
+  perspective: 1000px;
+  margin:0 auto;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.foo,.display-2{
+  text-align:center;
+  font-size:30px;
+  font-weight:bold;
+}
+
+#form{
+  color:white;
+}
+.display-2{
+  font-size:4em;
+}
+
+img{
+  width:25%;
+  float:left;
+  margin:1.66%;
+
+  height:200px;
+}
+p{
+  margin:1.66%;
+  font-size:50px;
+  font-weight: bold;
+  color:#0e47a3;
+  width:30%;
+  padding-bottom:20px;
+  text-transform: uppercase;
+  text-align:left;
+}
+.skills {
+  background:white;
+
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+
+
+}
+ 
+}
+.class{
+  margin-left:110px;
+}
+
+.container .skills{
+  background: yellow;
+}
+
+.container .skills:hover{
+  background:#f4428c;
+}
+
+.right{
+  text-align: left;
+  margin-top:10px;
+}
+.left-1{
+  padding-left:870px;
+ }
+.foot a{
+  color:#616b7a;
+}
+.foot{
+  background: #b5c7e5;
+  color: #24272b;
+}
